@@ -17,13 +17,13 @@ attributes of link" is clicked -->
         <!-- When "Remove Result" button is clicked removeResult() function is invoked removes the html of div with id attrs -->
         <button onclick="removeResult()">Remove Result</button>     
         <script type="text/javascript"> 
-            var showAttribindiv=document.getElementById('attrs');
-            var emrsltAttribindiv=document.getElementById('google');
+            var showAttribindiv=document.getElementById('attrs'); //showAttribindiv object has div html element with id name attrs 
+            var remrsltAttribindiv=document.getElementById('google');//remrsltAttribindiv object has anchor html element with id name google
 /* Show the attribute values of anchor tag in div with id attrs when button with text "Show
 Attributes of link" is clicked */
             showAttribindiv.addEventListener('click',showAttriboflnk);
 /* Remove the html of div with id attrs when button with text "Remove Result" is clicked */
-            remrsltAttribindiv1.removeEventListener('click',removeResult);
+            remrsltAttribindiv.removeEventListener('click',removeResult);
         </script> 
 </body>
 </html>
