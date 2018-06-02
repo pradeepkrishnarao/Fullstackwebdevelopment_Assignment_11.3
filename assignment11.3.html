@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Script loads from the external javascript file assignment11.3.js -->
+    <script type="text/javascript" src="assignment11.3.js"></script>
+    <title>assignment 11.3</title>
+</head>
+<body>
+        <a id="google" target="_self" href="https://www.w3resource.com/">google</a>
+        <div id="attrs"></div>
+        <!-- When "Show Atrributes of link" button is clicked showAttriboflnk() function is invoked and show the attribute values of anchor tag in div with id attrs when button with text "Show
+attributes of link" is clicked -->
+        <button onclick="showAttriboflnk()">Show Atrributes of link</button>
+        <!-- When "Remove Result" button is clicked removeResult() function is invoked removes the html of div with id attrs -->
+        <button onclick="removeResult()">Remove Result</button>     
+        <script type="text/javascript"> 
+            var showAttribindiv=document.getElementById('attrs');
+            var emrsltAttribindiv=document.getElementById('google');
+/* Show the attribute values of anchor tag in div with id attrs when button with text "Show
+Attributes of link" is clicked */
+            showAttribindiv.addEventListener('click',showAttriboflnk);
+/* Remove the html of div with id attrs when button with text "Remove Result" is clicked */
+            remrsltAttribindiv1.removeEventListener('click',removeResult);
+        </script> 
+</body>
+</html>
